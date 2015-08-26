@@ -24,7 +24,7 @@ export default function({ Plugin, types: t }) {
         const potentialPathWithExt = potentialPath + ext
 
         if (fs.existsSync(potentialPathWithExt)) {
-          return path.relative(path.dirname(context.state.opts.filename), potentialPath)
+          return './' + path.relative(path.dirname(context.state.opts.filename), potentialPath)
         }
       }
     }
