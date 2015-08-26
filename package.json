@@ -11,7 +11,7 @@
     "build": "rm -rf lib/ && babel $npm_package_options_babel",
     "watch": "rm -rf lib/ && babel --watch $npm_package_options_babel",
     "prepublish": "npm run build",
-    "install": "npm run prepublish"
+    "install": "if [ -d \"./src\" ]; then npm run prepublish; fi"
   },
   "author": "Jamie Greeff <jamiegreeff+git@gmail.com>",
   "license": "MIT",
