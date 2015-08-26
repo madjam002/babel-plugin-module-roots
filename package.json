@@ -1,6 +1,6 @@
 {
   "name": "babel-plugin-module-roots",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Rewrite ES6 imports based on certain root paths",
   "main": "index.js",
   "options": {
