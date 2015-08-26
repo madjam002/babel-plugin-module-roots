@@ -1,0 +1,21 @@
+{
+  "name": "babel-plugin-module-roots",
+  "version": "0.0.1",
+  "description": "Rewrite ES6 imports based on certain root paths",
+  "main": "index.js",
+  "options": {
+    "babel": "--stage 0 --ignore __tests__ --out-dir lib/ src/"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rm -rf lib/ && babel $npm_package_options_babel",
+    "watch": "rm -rf lib/ && babel --watch $npm_package_options_babel",
+    "prepublish": "npm run build",
+    "install": "npm run prepublish"
+  },
+  "author": "Jamie Greeff <jamiegreeff+git@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "babel": "^5.8.21"
+  }
+}
